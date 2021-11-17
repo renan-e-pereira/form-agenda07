@@ -81,7 +81,7 @@
         <div class="formulario">
             <h1>Editar Cadastros</h1>
 
-            <form action="editar_cliente2.php" method="POST">
+            <form action="editar_cliente2.php" method="POST" enctype="multipart/form-data">
 
 
                 <label for="id" class="col-sm-2-form-label">Id: </label> <?php echo $registro["cod"]; ?>
@@ -113,6 +113,14 @@
         -->
                 <br><label for="senha" class="col-sm-2 col-form-label">Senha:</label>
                 <input type="password" name="senha" class="form-control" value="<?php echo $registro["senha"]; ?>" required="required">
+
+                <!-- 
+        ==============================
+        ========== Arquivo ===========
+        ============================== 
+        -->
+            <br><label for="arquivo" class="col-sm-2 col-form-label">Arquivo:</label>
+            <input type="file" name="arquivo" class="form-control" value="<?php echo $registro['arquivo']; ?>" required="required">
 
                 <br>
 

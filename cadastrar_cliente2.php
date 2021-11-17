@@ -26,7 +26,7 @@
 
         }
 
-        $sql = "INSERT INTO agenda07_dados_usuarios VALUES ('null', '$nome', '$login', '$senha', '$novo_nome')";
+        $sql = "INSERT INTO agenda07_dados_usuarios VALUES ('null', '$nome', '$login', '$senha', '$diretorio . $novo_nome')";
         mysqli_query ($mysqli, $sql) or die ("Erro ao tentar cadastrar.");
         mysqli_close ($mysqli);
 
